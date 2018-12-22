@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="col-xs-12" ng-show="ItemCtrl.errorMessage">
+		<div class="alert alert-danger">{{ItemCtrl.errorMessage}}</div>
+	</div>
+	<div class="col-xs-12" ng-hide="ItemCtrl.errorMessage">
+		<div class="thumbnail">
+			
+			<div class="product-item full cf">
+				<span class="product-price" ng-if="ItemCtrl.item.price">£{{ItemCtrl.item.price}}</span>
+				<h2 class="product-title">{{ItemCtrl.item.item}}</h2>
+				<span class="product-category">{{ItemCtrl.item.category}}</span>
+				<span class="product-sub-category">{{ItemCtrl.item.subcat}}</span>
+			</div>
+			
+			<div class="product-add">
+				<p><i>Add this product to your shopping bag by clicking the following button:</i></p>
+				<p ng-show="!ItemCtrl.item.price">This product is not available at the moment.</p>
+				<button class="btn btn-add" role="button" ng-click="ItemCtrl.addItem(ItemCtrl.item)" ng-disabled="!ItemCtrl.item.price">Add to bag</button>
+			</div>
+
+		</div>
+	</div>
+</div>

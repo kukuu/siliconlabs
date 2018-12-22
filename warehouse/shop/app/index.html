@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>Alexander Adu-Sarkodie : AngularJS Stock Engine</title>
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+	<div class="container">
+	
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page-header clearfix" ng-controller="ShoppingBagController as ShoppingBag">
+				<!--MainController as mainCtrl-->
+					<a href="#/shopping-bag" class="panel panel-primary shop-cart">
+						<div class="panel-heading">
+							<h3 class="panel-title">Your Bag!</h3>
+						</div>
+						<div class="panel-body">
+							{{ShoppingBag.items.length}} item(s)<!--"ShoppingBag" is the instantiated cntroller from above and "items" is the model from ShoppingBagController -->
+						</div>
+					</a>
+					<h1><a href="#/home">AngularJS Warehouse Stock Engine</a>
+						<br /><a href="http://www.goldhawk-college.com/istudio/profile.html"><small>Home</small></a></a>
+
+					</h1>
+				</div>
+			</div>	
+		</div>
+
+		<ng-view></ng-view><!--placeholder for views-->
+		
+	</div>
+
+	<script src="scripts/vendor/angular.min.js"></script>
+	<script src="scripts/vendor/angular-route.min.js"></script>
+	<script src="scripts/app.js"></script>
+	
+	<!-- Controllers -->
+	<script src="scripts/controllers/products-controller.js"></script>
+	<script src="scripts/controllers/item-controller.js"></script>
+	<script src="scripts/controllers/shopping-bag-controller.js"></script>
+	<script src="scripts/controllers/shopping-list-controller.js"></script>
+
+	<!-- Factories -->
+	<script src="scripts/factories/products-factory.js"></script>
+	<script src="scripts/factories/shopping-bag-factory.js"></script>
+
+	<!-- Filters -->
+	<script src="scripts/filters/capitalize-filter.js"></script>
+	<script src="scripts/filters/sum-filter.js"></script>
+	<script src="scripts/filters/length-filter.js"></script>
+	<script src="scripts/filters/category-filter.js"></script>
+	
+</body>
+</html>

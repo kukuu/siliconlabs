@@ -1,0 +1,47 @@
+<div class="row">
+
+	<div class="col-xs-12" ng-show="ProductsCtrl.errorMessage">
+		<div class="alert alert-danger">{{ProductsCtrl.errorMessage}}</div>
+	</div>
+
+	<div class="col-xs-3" ng-hide="ProductsCtrl.errorMessage">
+
+		<div class="list-group">
+
+			<span class="list-group-item">Category filter ({{ProductsCtrl.categories.length}} found)</span>
+
+			<span class="list-group-item">
+				<span class="badge">{{ ProductsCtrl.products.length }}</span><!--"products" is an Array model. Once we have access to it we can target the data models i. e cataegory. See ProductsController-->
+				<!-- Note the format for naming filters as hyphenated in the name attribute in the control but camel cased in the model. Also see the ng-model picks the filter on the instantiated controller ng-model="ProductsCtrl.categoryFilter" -->
+				<input type="radio" name="category-filter" ng-model="ProductsCtrl.categoryFilter" id="all-sizes" ng-value="All">
+				<label for="all-sizes">All</label>
+			</span>
+
+			<span class="list-group-item" ng-repeat="category in ProductsCtrl.categories"><!--model is categories - An array Can be found in ProductsController -->
+				<span class="badge">{{ ProductsCtrl.products |  CategoryFilter:category | lengthFilter}}</span>
+				<input type="radio" name="category-filter" ng-model="ProductsCtrl.categoryFilter" id="{{category}}" value="{{category}}">
+				<label for="{{category}}">{{category | CapitalizeFilter}}</label>
+			</span>
+
+		</div>
+
+	</div>
+
+	<div class="col-xs-9" ng-hide="ProductsCtrl.errorMessage">
+		<div class="row">
+			<div class="products-list">
+
+				<div class="product-item" ng-repeat="product in ProductsCtrl.products | CategoryFilter:ProductsCtrl.categoryFilter">
+					<a href="#/product/{{product.uid}}" class="thumbnail">
+						<span class="product-price" ng-if="product.price">£{{product.price}}</span>
+						<h2 class="product-title">{{product.item}}</h2>
+						<span class="product-category">{{product.category}}</span>
+						<span class="product-sub-category">{{product.subcat}}</span>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
