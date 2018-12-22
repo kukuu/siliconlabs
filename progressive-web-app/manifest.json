@@ -1,0 +1,56 @@
+{
+	"name": "news",
+	"short_name": "news",
+	"theme_color":"#ffffff",
+	"display": "standalone",
+	"start_url": ".",
+	"icons": [
+		{
+			"src": "images/icons/icon-72*72.png",
+			"sizes": "72*72",
+			"type": "image/png" 
+
+		},
+		{
+			"src": "images/icons/icon-96*96.png",
+			"sizes": "96*96",
+			"type": "image/png" 
+
+		},
+		{
+			"src": "images/icons/icon-128*128.png",
+			"sizes": "128*128",
+			"type": "image/png" 
+
+		},
+		{
+			"src": "images/icons/icon-150*150.png",
+			"sizes": "150*150",
+			"type": "image/png" 
+
+		},
+		{
+			"src": "images/icons/icon-200*200.png",
+			"sizes": "200*200",
+			"type": "image/png" 
+
+		},
+		{
+			"src": "images/icons/icon-250*250.png",
+			"sizes": "250*250",
+			"type": "image/png" 
+
+		},
+		{
+			"src": "images/icons/icon-300*300.png",
+			"sizes": "300*300",
+			"type": "image/png" 
+		},
+		{
+			"src": "images/icons/icon-320*320.png",
+			"sizes": "320*320",
+			"type": "image/png" 
+
+		}
+	]
+}
