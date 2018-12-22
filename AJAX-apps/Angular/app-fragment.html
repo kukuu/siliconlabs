@@ -1,0 +1,19 @@
+<div ng-app="APP">
+    <h2>URL example</h2>
+    <div ng-controller="urlController">
+        <div ng-repeat="user in users">
+            {{user.fname}} {{user.lname}} 
+        </div>
+    </div>
+    <hr />
+<h2>JSON Object example</h2>
+    <div ng-controller="objController">
+        <table>
+        <tr ng-repeat="user in users">
+           <td>{{user.fname}}</td>
+            <td>{{user.lname}}</td>
+            <td>{{user.tel}}</td>
+        </tr>
+        </table>
+    </div>    
+</div>
