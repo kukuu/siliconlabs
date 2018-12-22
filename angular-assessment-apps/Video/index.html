@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>HTML5 Video</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+    </head>
+
+    <body>
+
+        <h2>Video</h2>
+
+        <div id="video-container">
+
+            <form id="controls">
+                <input type="radio" value="native" name="controls" id="native" checked="checked" />
+                <label for="native">Native controls</label>
+                
+                <input type="radio" value="custom" name="controls" id="custom" /> 
+                <label for="custom">Custom controls</label>
+            </form>
+
+            <!-- Video -->
+            <video id="video" class="paused" controls>
+                <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.webm" type="video/webm"> 
+                <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg"> 
+                <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+                <p>
+                    Your browser does not support the <code>video</code> element :(
+                </p>
+            </video>
+
+            <!-- Video Controls -->
+            <div id="video-controls">
+                <a href="#" id="play-pause"></a>
+                <span class="time">00:31 / 01:01</span>
+                <input type="range" id="seek-bar" value="0">
+                <a href="#" id="mute"></a>
+                <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                <a href="#" id="full-screen"></a>
+            </div>
+
+        </div>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </body>
+</html>

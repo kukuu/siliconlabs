@@ -1,0 +1,72 @@
+* { box-sizing: border-box; }
+
+/** Angular cloak **/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+/** header & content **/
+header {
+    padding-bottom: 25px;
+    width: 100%;
+    border-bottom: 5px solid #000;
+}
+#content, .logo {
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 1100px;
+}
+.logo a {
+    display: inline-block;
+}
+.search {
+    margin-top: 30px;
+}
+
+/** product list **/
+.products {
+    margin-top: 20px;
+}
+.products .well {
+    text-align: right;
+}
+.products .well .glyphicon {
+    color: #000;
+}
+.products article{
+    margin-bottom: 25px; 
+}
+.products .add-to-basket {
+    margin-top: 10px;
+}
+.products .no-results {
+    clear: both;
+    text-align: center;
+}
+
+/** basket **/
+.basket .item-details:after {
+    content: ''; 
+    clear: both; 
+}
+.basket .item-details img {
+    float: left;
+    margin-right: 16px;
+}
+.basket .item-details span {
+    overflow: hidden;
+}
+
+/** helper class **/
+.red {
+    color: #d9534f;
+}
+.red:hover {
+    color: #c9302c;
+}
+.table .tdRight {
+  text-align: right;
+}
+.table .tdCenter {
+  text-align: center;
+}

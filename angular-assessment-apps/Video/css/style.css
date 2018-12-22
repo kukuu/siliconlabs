@@ -1,0 +1,114 @@
+* { box-sizing: border-box; }
+body {
+    margin: 20px auto;
+    padding: 0;
+    width: 580px;
+    font: 75%/120% Arial, Helvetica, sans-serif;
+    background-color: #323c4b;
+    color: #fff;
+}
+h2 {
+    font: bold 190%/100% Arial, Helvetica, sans-serif;
+    margin: 0 0 .2em;
+}
+h2 em {
+    font: normal 80%/100% Arial, Helvetica, sans-serif;
+    color: #999999;
+}
+
+#video-container {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 640px;
+}
+#video {
+    margin-top: 20px;
+    width: 100%;
+}
+#video.full-screen::-webkit-media-controls {
+    display: none !important;
+}
+#video.full-screen::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+#video-controls {
+    position: relative;
+    display: none;
+    width: 640px;
+    height: 40px;
+    border-top: 2px solid #fff;
+    background-color: #f3f3f3;
+    z-index: 2147483647;
+}
+#video-controls.full-screen {
+    position: absolute;
+    bottom: 0;
+}
+#video-controls a {
+    display: inline-block;
+    width: 44px;
+    height: 100%;
+    background-image:   url(../images/player-controls.png);
+    background-repeat:  no-repeat;
+    opacity: 0.5;
+}
+#video-controls a:hover {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+#play-pause {
+    background-position: 12px 12px;
+    border-right: 1px solid #fff;
+}
+#play-pause.playing {
+    background-position: -23px 12px;
+}
+#video-controls .time {
+    display: inline-block;
+    margin: -2px 0 0;
+    padding: 0 19px;
+    height: 40px;
+    color: #4f4f4f;
+    line-height: 44px;
+    vertical-align: top;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+#mute {
+    background-position: -55px 12px;
+    border-left: 1px solid #dadada;
+}
+#mute.muted {
+    background-position: -92px 12px;
+}
+#full-screen {
+    background-position: -128px 12px;
+    border-left: 1px solid #dadada;
+}
+#video-controls.full-screen #full-screen {
+    background-position: -161px 12px;    
+}
+#seek-bar, #volume-bar {
+    -webkit-appearance: none;
+    margin: 17px 14px 0;
+    width: 220px;
+    height: 5px;
+    background-color: #4f4f4f;
+    border-top: 1px solid #232323;
+    vertical-align: top;
+}
+#seek-bar {
+    width: 270px;
+}
+#volume-bar {
+    margin-left: 0;
+    width: 70px;
+}

@@ -1,0 +1,29 @@
+[{
+    "images": [
+    {
+        "title": "Image 1",
+        "large": "images/img1-lg.jpg",
+        "thumb": "images/img1-thumb.jpg"
+    },
+    {
+        "title": "Image 2",
+        "large": "images/img2-lg.jpg",
+        "thumb": "images/img2-thumb.jpg"
+    },
+    {
+        "title": "Image 3",
+        "large": "images/img3-lg.jpg",
+        "thumb": "images/img3-thumb.jpg"
+    },
+    {
+        "title": "Image 4",
+        "large": "images/img4-lg.jpg",
+        "thumb": "images/img4-thumb.jpg"
+    },
+    {
+        "title": "Image 5",
+        "large": "images/img5-lg.jpg",
+        "thumb": "images/img5-thumb.jpg"
+    }
+    ]
+}]

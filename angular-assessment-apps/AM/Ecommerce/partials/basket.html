@@ -1,0 +1,103 @@
+<div id="basket">
+
+    <h2>Your basket</h2>
+
+    <div class="container-fluid">
+        <div class="row products">
+
+            <div class="col-md-9">
+
+                <!-- items in basket -->
+                <table class="table table-bordered basket">
+
+                    <!-- header -->
+                    <thead class="well">
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th></th>
+                    </thead>
+
+                    <!-- items -->
+                    <tr ng-repeat="item in basket.items">
+
+                        <td class="item-details">
+                            <img ng-src="{{item.image}}" width="32" alt="{{item.item}}" />
+                            <span>{{item.name}}</span>
+                        </td>
+
+                        <td class="tdCenter col-md-3">   
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button 
+                                        class="btn btn-default" type="button" 
+                                        ng-disabled="item.quantity <= 1"
+                                        ng-click="item.quantity = item.quantity - 1; basket.saveItems()">-</button>
+                                </span>
+                                <input class="form-control text-center" type="tel" ng-model="item.quantity" />
+                                <span class="input-group-btn">
+                                    <button 
+                                        class="btn btn-default" type="button" 
+                                        ng-disabled="item.quantity >= 1000"
+                                        ng-click="item.quantity = item.quantity + 1; basket.saveItems()">+</button>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td class="tdRight col-md-2">
+                            {{item.price * item.quantity | currency:"£"}}
+                        </td>
+
+                        <td class="tdCenter">
+                            <a href="" ng-click="basket.addItem(item, -10000000)" title="Remove from basket">
+                                <i class="glyphicon glyphicon-remove red"></i>
+                            </a>
+                        </td>
+
+                    </tr>
+
+                    <!-- empty basket message -->
+                    <tr ng-hide="basket.getTotalAmount() > 0" >
+                        <td class="tdCenter" colspan="4">
+                            Your basket is empty.
+                        </td>
+                    </tr>
+
+                    <!-- footer -->
+                    <tfoot class="well">
+                        <tr>
+                            <td><b>Total</b></td>
+                            <td class="tdCenter"><b>{{basket.getTotalAmount()}}</b></td>
+                            <td class="tdRight"><b>{{basket.getTotalPrice() | currency:"£"}}</b></td>
+                            <td />
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </div>
+
+
+            <!-- basket buttons -->
+            <div class="col-md-3">
+
+                <p class="text-info">
+
+                    <a class="btn btn-block btn-default" href="#/shop">
+                        <i class="glyphicon glyphicon-chevron-left"></i> back to the shop
+                    </a>
+
+                    <a  href="" class="btn btn-block btn-danger" 
+                        ng-click="basket.clearItems()" 
+                        ng-disabled="basket.getTotalCount() < 1">
+                        <i class="glyphicon glyphicon-trash"></i> clear basket
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
