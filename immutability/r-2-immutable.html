@@ -1,0 +1,25 @@
+
+
+<html>
+<title>JavaScript Mutation: Mutability and Immutability</title>
+<script>
+	var a = { name: "Will", age: 35};
+
+	//We use object.assign to change the state of a and to mutate it and assign to a different object "b"
+
+	var b = Object.assign({}, a, {name: "Fred"});
+	//object {name: “Fred”, age: 35}
+	
+	//the state of the object "a" will  ot change. B is added
+	//object{ name: "will", age”: 35}
+
+	//console.log(b);
+	console.log(a);
+	console.log(b);
+
+	
+</script>
+<body>
+
+</body>
+</html>
