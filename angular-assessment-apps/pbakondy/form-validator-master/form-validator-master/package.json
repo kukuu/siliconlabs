@@ -1,0 +1,28 @@
+{
+  "name": "form-validator",
+  "version": "1.0.0",
+  "description": "Form Validator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pbakondy/form-validator.git"
+  },
+  "author": "Peter Bakondy",
+  "license": "MIT",
+  "homepage": "https://github.com/pbakondy/form-validator",
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-eslint": "^0.12.0",
+    "gulp-karma": "^0.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-zip": "^3.0.2",
+    "karma": "^0.12.35",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.5",
+    "run-sequence": "^1.1.0"
+  }
+}

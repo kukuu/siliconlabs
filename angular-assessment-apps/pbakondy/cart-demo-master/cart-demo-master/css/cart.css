@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box; }
+
+*:after, *:before {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff; }
+
+.cart-containter {
+  width: 600px;
+  margin: 10px auto; }
+  .cart-containter h1 {
+    text-align: center; }
+  .cart-containter .cart-footer {
+    padding: 10px;
+    text-align: center; }
+    .cart-containter .cart-footer p {
+      margin: 10px 0; }
+
+@media (max-width: 768px) {
+  .cart-containter {
+    width: 100%;
+    margin: 0; } }
+
+.item {
+  display: block;
+  padding: 10px;
+  font-size: 1em;
+  line-height: 1.4;
+  border-bottom: 1px solid #aaa;
+  position: relative; }
+  .item:hover {
+    background-color: #eee; }
+  .item .category {
+    font-size: 0.8em; }
+    .item .category:after {
+      content: ' >'; }
+  .item .subcat {
+    font-size: 0.8em; }
+  .item .name {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 5px 0; }
+  .item .quantity-label {
+    display: inline-block;
+    line-height: 2;
+    margin-right: 5px; }
+    .item .quantity-label .quantity {
+      width: 50px;
+      text-align: right; }
+  .item .price {
+    display: inline-block;
+    line-height: 2;
+    margin-right: 5px; }
+  .item .total {
+    display: inline-block;
+    line-height: 2; }
+  @media (max-width: 520px) {
+    .item .total {
+      display: block; } }
+  .item .btn {
+    border: 1px solid #333;
+    background-color: #eee;
+    color: #333;
+    border-radius: 0;
+    padding: 5px; }
+    .item .btn:hover {
+      background-color: #fff; }
+  .item .btn-remove {
+    display: block;
+    position: absolute;
+    margin: 10px;
+    bottom: 0px;
+    right: 0px; }

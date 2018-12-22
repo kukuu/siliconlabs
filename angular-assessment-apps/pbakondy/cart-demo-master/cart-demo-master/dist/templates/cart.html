@@ -1,0 +1,16 @@
+    <div class="cart-containter">
+      <h1>Your Shopping Cart</h1>
+      <div ng-repeat="item in cart" class="item">
+        <span class="category">{{items[item.uid].category}}</span>
+        <span class="subcat">{{items[item.uid].subcat}}</span>
+        <h2 class="name">{{items[item.uid].item}}</h2>
+        <span class="price">Unit price: <strong>{{items[item.uid].price | currency:"£":2 }}</strong></span>
+        <label class="quantity-label">Quantity: <input type="number" min="1" class="quantity" ng-model='item.quantity'></label>
+        <span class="total">Total price: <strong>{{items[item.uid].price * item.quantity | currency:"£":2 }}</strong></span>
+        <button class="btn btn-remove" ng-click="remove($index)">Remove</button>
+      </div>
+      <div class="cart-footer">
+        <p class="item-total">Total Quantity: <strong>{{ cart | cartItemTotal }}</strong></p>
+        <p class="price-total">Total Price: <strong>{{ cart | cartPriceTotal : items | currency:"£":2 }}</strong></p>
+      </div>
+    </div>

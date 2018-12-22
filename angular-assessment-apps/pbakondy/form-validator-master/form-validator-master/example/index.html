@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Validator</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <!--[if lt IE 10]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form Validator</h1>
+      <p>&copy; Peter Bakondy @<a href="https://github.com/pbakondy/form-validator" target="_blank">Github</a> @<a href="https://twitter.com/pbakondy" target="_blank">Twitter</a></p>
+
+      <form name="form1" class="form validator" method="">
+        <header>
+          <h2>User registration form example</h2>
+        </header>
+        <label>
+          <span>Username</span>
+          <input name="username" type="text" v-check-taken="username">
+        </label>
+        <label>
+          <span>Email address</span>
+          <input name="email" type="text" v-type="email" v-min="6" v-check-taken="email">
+        </label>
+        <label>
+          <span>Credit card number</span>
+          <input name="creditcard" type="text" v-type="numeric" v-min="14" v-max="16">
+        </label>
+        <label>
+          <span>Security Code</span>
+          <input name="securitycode" type="text" v-type="numeric" v-length="3">
+        </label>
+        <label>
+          <span class="formula"></span>
+          <input type="text" v-formula>
+        </label>
+        <footer>
+          <button type="submit" class="btn">Submit</button>
+        </footer>
+      </form>
+      <div class="registered">
+        <button type="button" class="btn btn-showuser">Show Registered Usernames</button>
+      </div>
+      <div class="registered">
+        <button type="button" class="btn btn-showemail">Show Registered Email Addresses</button>
+      </div>
+    </div>
+
+    <script src="../src/validator.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var btn1 = document.querySelector('.btn-showuser');
+        var btn2 = document.querySelector('.btn-showemail');
+
+        var btn1click = function() {
+          var list = Validator.showRegisteredUsernames();
+          btn1.insertAdjacentHTML('afterend', '<p>' + list.join(', ') + '</p>');
+          btn1.removeEventListener('click', btn1click, false);
+        };
+        var btn2click = function() {
+          var list = Validator.showRegisteredEmails();
+          btn2.insertAdjacentHTML('afterend', '<p>' + list.join(', ') + '</p>');
+          btn2.removeEventListener('click', btn2click, false);
+        };
+
+        btn1.addEventListener('click', btn1click, false);
+        btn2.addEventListener('click', btn2click, false);
+
+      }, false);
+    </script>
+  </body>
+</html>
