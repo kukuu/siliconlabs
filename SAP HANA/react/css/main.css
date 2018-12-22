@@ -1,0 +1,32 @@
+
+body {
+ padding-top: 70px;
+}
+
+
+.vertical-align {
+		display: flex;
+		align-items: baseline;
+	}
+
+.vertical-align .top {
+	align-self: baseline;
+}
+
+.vertical-align .center {
+	align-self: center;
+}
+
+.available {
+	color: green;
+	font-weight: bold;
+}
+
+.discontinued {
+	color: red;
+	font-weight: bold;
+}
+
+.list-group {
+	margin-top: 20px;
+}
