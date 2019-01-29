@@ -1,7 +1,7 @@
-# Browserslist Example
+# Browserslist 
 
 
-[Browserslist] is a config to share target browsers
+Browserslist is a config to share target browsers
 between different front-end tools.
 
 This repository shows how Browserslist is used by:
