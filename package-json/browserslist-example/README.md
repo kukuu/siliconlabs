@@ -1,6 +1,5 @@
 # Browserslist 
 
-
 Browserslist is a config to share target browsers
 between different front-end tools.
 
@@ -14,13 +13,7 @@ This repository shows how Browserslist is used by:
 * **[ESLint](#eslint)**
 * **[Stylelint](#stylelint)**
 
-See [`package.json`] for config example.
 
-<a href="https://evilmartians.com/?utm_source=browserslist-example">
- 
-
-[`package.json`]: ./package.json
-[Browserslist]:   https://github.com/ai/browserslist
 
 ## How to Add Browserslist to Your Project
 
