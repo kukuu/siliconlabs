@@ -20,9 +20,7 @@ This repository shows how Browserslist is used by:
 See [`package.json`] for config example.
 
 <a href="https://evilmartians.com/?utm_source=browserslist-example">
-  <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
-       alt="Sponsored by Evil Martians" width="236" height="54">
-</a>
+ 
 
 [`package.json`]: ./package.json
 [Browserslist]:   https://github.com/ai/browserslist
