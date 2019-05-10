@@ -3,11 +3,15 @@
 ## Technologies, Platforms, Architectures and Skills
 . Crafter Studio
 
-. REACT Storybook
+. REACT 
+
+. REDUX
+
+. FLUX
 
 . Object Oriented Programming / JavaScript / Object Oriented JavaScript
 
-. RESTful APIs
+. REST/RESTful APIs
 
 . NodeJS
 
@@ -23,7 +27,13 @@
 
 . GraphQL / Relay
 
+. GatsbyJS
+
+. SWAGGER
+
 . MongoDB
+
+. MySQL
 
 . oAuth
 
@@ -46,6 +56,10 @@
 . TDD
 
 . BDD
+
+. Enzyme
+
+. JEST
 
 . Continuous Development/Deployment
 
@@ -77,6 +91,14 @@
 
 . Style Loader
 
+. CSSModule
+
+. Style Components
+
+. SASS
+
+. LESS
+
 . ActiveMQ(Apache - Messaging) 
 
 . SPRING
@@ -94,6 +116,12 @@
 . Accessibility / Usability
 
 . SSO (Single Sign On)
+
+.Isomorphic JavaScript(Server side Rendering)
+
+. PWA
+
+. Service Worker
 
 . Mobile First
 
