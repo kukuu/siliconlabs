@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ES6 - operators</title>
+  	<script>
+  		const sum = (...args) => [...args].reduce((a, b) => a + b, 0);// Unpack arguments into array, and attachto reduce
+  		console.log(sum(1,2)); // returns 3
+  		console.log(sum(1,2,3)); // returns 6
+
+
+  		function findResultofDifference(a){
+
+  		    return function(b){
+  		        console.log(a - b);
+  		    }
+  		}
+
+  		findResultofDifference(9)(6);
+
+    	</script>
+  </head>
+  <body>
+  	<h3>The spread operator, (...) , three dots is one of the most powerful features of the es6 JavaScript standards.</h3>
+  	<p>Use const instead of let if you know values will never change</p>
+  	<p>Use the spread operator to future proof code. Making programme extensible</p>
+  	<p>Use reduce to perform additional operations using all arguments defined and referenced in the SPREAD operator.</p>
+  	<p>Finding the difference between numbers</p>
+  </body>
+ </html>
+
+
+
