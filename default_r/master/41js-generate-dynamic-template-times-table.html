@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Generate Dynamic Template with Loops</title>
+
+		<script type="text/javascript">
+
+			document.write("<h1>Multiplication table</h1>");
+			document.write("<table border=2 width=50%"); 
+
+			for (var i = 1; i <= 9; i++ ) {   //this is the outer loop
+			  document.write("<tr>");
+			  document.write("<td>" + i + "</td>");
+			  
+			   for ( var j = 2; j <= 9; j++ ) { // inner loop
+			        document.write("<td>" + i * j + "</td>");
+			    }
+
+			   document.write("</tr>");
+			} 
+
+			document.write("</table>"); 
+
+	</script>
+	</head>
+
+	<body>
+	</body>
+</html>

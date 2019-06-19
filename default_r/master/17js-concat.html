@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Concat</title>
+		<script>
+			function myFunction(){
+				var hege = ["Cecilie", "Lone"];
+				var stale = ["Emil", "Tobias", "Linus"];
+				var kai = ["Robin"];
+				var children = hege.concat(stale,kai); 
+				var x = document.getElementById("demo");
+				x.innerHTML = children;
+			}
+		</script>
+	</head>
+<body>
+<p>The <strong>concat()</strong> method is used to join two or more arrays.
+ 
+This method does not change the existing arrays, but returns a new array, containing the values of the joined arrays.
+</p>
+
+<p id="demo">Click the button to join three arrays.</p>
+
+<button onclick="myFunction()">launch</button>
+
+</body>
+</html>
+

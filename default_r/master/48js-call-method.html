@@ -1,0 +1,21 @@
+
+<html>
+<title>JavaScript using Call and Apply</title>
+<script>
+	var person1 = {name: 'Marvin', age: 42, size: '2xM'};
+	var person2 = {name: 'Zaphod', age: 42000000000, size: '1xS'};
+
+	var say = function(greeting, typeg){
+	    alert(greeting + ', ' + this.name + ' ' + typeg);
+	    console.log(greeting + ', ' + this.name + ' ' + typeg);
+
+	};
+	// the first argument for the call is an object, the following are arguments
+	say.call(person1, 'Hello','morning');
+	say.call(person2, 'Goodbye','Aurevoir');
+
+</script>
+<body>
+
+</body>
+</html>

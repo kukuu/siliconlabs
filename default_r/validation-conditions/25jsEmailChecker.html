@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>validate email</title>
+	<script language="javascript" type="text/javascript">
+		<!--			
+			function validate() {
+				// validate email
+				if(document.f.email.value == '') {
+					fail('Email missing');
+					return;
+				} 
+				else if(document.f.email.value.indexOf('@') == -1) {
+					fail('No "@" in email');
+					return;
+				}
+				else {
+					var addr = document.f.email.value.split('@');
+					if(addr[0].length < 1) {
+						fail('User address absent');
+					}
+					else if(addr[1].indexOf('.') == -1) {
+						fail('No dot');
+					}
+					else if(addr[1].length < 3) {
+						fail('Domain incorrect');//eg. "al@.co"
+					}
+					else {
+						document.f.submit();
+					}				
+				}											
+			}//validate
+			function fail(msg) {
+				alert('Email error: ' + msg);
+				//document.write('Email error: ' + msg);
+				//return;
+			}
+		//-->	
+	</script>
+</head>
+<body>
+	<h2>booking form</h2>
+	<form name="f" action="#">					
+		<p>Email: <input type="input" name="email" value="" /> 
+		<input type="button" value="submit" onclick="validate()" /></p>
+		<p><span id="emailError"></span></p>
+	</form>		
+	<p class="home"><a href="http://www.goldhawk-college.com/istudio/responsive-design/responsive-design-1.html">Home</a></p>
+</body>
+</html>

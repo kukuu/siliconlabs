@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>sort - descending</title>
+	<script>
+		function myFunction() {
+			var points = [40,100,1,5,25,10];
+			points.sort(function(a,b){
+				return b-a;
+			});
+			var x=document.getElementById("demo");
+			x.innerHTML=points;
+		}
+</script>
+</head>
+
+<body>
+
+<p>
+The sort() method sorts the items of an array.
+ 
+The sort order can be either alphabetic or numeric, and either ascending or descending.
+ 
+Default sort order is alphabetic and ascending.</p>
+ 
+<p>Note: When numbers are sorted alphabetically, "40" comes before "5".
+ 
+To perform a numeric sort, you must pass a function as an argument when calling the sort method.
+ 
+The function specifies whether the numbers should be sorted ascending or descending.
+
+</p>
+
+<p id="demo">Click the button to sort the array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+</body>
+</html>

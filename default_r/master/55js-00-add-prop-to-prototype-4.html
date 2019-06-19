@@ -1,0 +1,26 @@
+<!-- Adding Properties to a Prototype
+You cannot add a new property to a prototype the same way as you add a new property to an existing object, because the prototype is not an existing object.
+To add a new property to a constructor, you must add it to the constructor function: -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+function person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+    this.nationality = "English";//note
+}
+
+var myFather = new person("John", "Doe", 50, "blue");
+var myMother = new person("Sally", "Rally", 48, "green");
+
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.nationality + ". My mother is " + myMother.nationality + " to."; 
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loops 2</title>
+	<script type="text/javascript">
+
+		function howMany (selectItem) {
+ 			 var numberSelected=0;//create a variable to store values. Set to 0
+
+ 			 for (var i=0; i < selectItem.options.length; i++) {
+				//options is DOM property of selected items
+   				  if (selectItem.options[i].selected == true)
+       					numberSelected++;//add  to  the variable. Increasing the counter.
+  			}
+
+ 		 return  numberSelected// Send or post value to function/application
+		}
+	</script>
+</head>
+<body>
+
+	<form name="selectForm">
+		<p>Choose some book types, then click the button below:</p>
+		<select multiple name="bookTypes" size="8">
+			<option selected> Classic </option>
+			<option> Information Books </option>
+			<option> Fantasy </option>
+			<option> Mystery </option>
+			<option> Poetry </option>
+			<option> Humor </option>
+			<option> Biography </option>
+			<option> Fiction </option>
+		</select>
+		<input type="button" value="How many are selected?"  onclick="alert ('Number of options selected: ' + howMany(document.selectForm.bookTypes))">
+</form>
+</body>
+</html>

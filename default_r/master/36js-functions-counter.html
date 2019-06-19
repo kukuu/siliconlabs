@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Using split function</title>
+	<script language="javascript" type="text/javascript">
+		function countit(){
+			var formcontent=document.wordcount.wordcount2.value;//check vlue
+			var content = formcontent.split(" ");//perform split operation on in
+			document.wordcount.wordcount3.value = content.length;
+		}
+	</script>
+</head>
+
+<body>
+<form name="wordcount">
+	<textarea rows="12" name="wordcount2" cols="38" wrap="virtual"></textarea><br>
+	<input type="button" value="Calculate Words" onClick="countit()">
+	<input type="text" name="wordcount3" size="20">
+</form>
+</body>
+</html>

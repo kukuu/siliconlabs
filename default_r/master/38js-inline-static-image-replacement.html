@@ -1,0 +1,45 @@
+<html>
+	<head>
+<meta name="description" content="Thumbnail click" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Image Replacement</title>
+	   
+	</head>
+	<body>
+	<h2>Gallery</h2>
+	<p>
+      <img id="largeImg" src="http://placehold.it/515x100/000/fff" alt="Large image" />
+    </p>
+	<p id="thumbs">
+	  <a href="http://placehold.it/515x100/000/fff" title="Image 2">
+          <img src="http://placehold.it/100/000/fff" />
+      </a>
+      <a href="http://placehold.it/515x100/0cc031/fff" title="Image 3">
+        <img src="http://placehold.it/100/0cc031/fff" />
+      </a>
+      <a href="http://placehold.it/515x100/11493dc/fff" title="Image 4">
+        <img src="http://placehold.it/100/11493dc/fff" />
+      </a>
+      <a href="http://placehold.it/515x100/ff5512/fff" title="Image 5">
+        <img src="http://placehold.it/100/ff5512/fff" />
+      </a>
+      <a href="http://placehold.it/515x100/dd38811/fff" title="Image 6">
+        <img src="http://placehold.it/100/dd38811/fff" />
+      </a>
+	</p>
+	<script id="jsbin-javascript">
+    var list = document.getElementById('thumbs');
+    var children = list.children;
+
+
+    for (i = 0 ; i < children.length ; i++){
+      children[i].addEventListener("click", showImage);
+    }
+
+    function showImage (e) {
+      e.preventDefault();
+      document.getElementById('largeImg').src = this.href;
+    }
+</script>
+</body>
+</html>

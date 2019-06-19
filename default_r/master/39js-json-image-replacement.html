@@ -1,0 +1,66 @@
+<html>
+	<head>
+<meta name="description" content="Thumbnail click JSON" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Image Replacement</title>
+	   
+	</head>
+	<body>
+	<h2>Gallery from JSON feed</h2>
+	<p>
+      <img id="largeImg" src="" alt="Large image" />
+    </p>
+	<p id="thumbs"></p>
+	<script id="jsbin-javascript">
+  var images = [
+    {
+      "href": "http://placehold.it/515x100/000/fff",
+      "src": "http://placehold.it/100/000/fff"
+    },
+    {
+      "href": "http://placehold.it/515x100/0cc031/fff",
+      "src": "http://placehold.it/100/0cc031/fff"
+    },
+    {
+      "href": "http://placehold.it/515x100/11493dc/fff",
+      "src": "http://placehold.it/100/11493dc/fff"
+    },
+    {
+      "href": "http://placehold.it/515x100/ff5512/fff",
+      "src": "http://placehold.it/100/ff5512/fff"
+    },
+    {
+      "href": "http://placehold.it/515x100/dd38811/fff",
+      "src": "http://placehold.it/100/dd38811/fff"
+    }
+  ];
+   
+  var list = document.getElementById('thumbs'),
+      image,
+      anchor;
+   
+
+
+for (i = 0 ; i < images.length ; i++){
+    anchor = document.createElement('a');
+    anchor.href = images[i].href;
+    
+    image = document.createElement('img');
+    image.src = images[i].src;
+    
+    anchor.appendChild(image);
+    
+    document.body.insertBefore(anchor, list);
+    
+    anchor.addEventListener("click", showImage);
+  }
+   
+  document.getElementById('largeImg').src = images[0].href;//declare default value
+   
+  function showImage (e) {
+    e.preventDefault();
+    document.getElementById('largeImg').src = this.href;
+  }
+</script>
+ 
+</html>

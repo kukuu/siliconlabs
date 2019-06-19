@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>splice</title>
+	<script>
+		function myFunction() {
+			var fruits = ["Banana", "Orange", "Apple", "Mango"];
+			fruits.splice(1,2,"Lemon","Kiwi");
+			var x=document.getElementById("demo");
+			x.innerHTML=fruits;
+		}
+	</script>
+</head>
+
+<body>
+
+<p id="demo"></p>
+
+<button onclick="myFunction()">Try it</button>
+
+</body>
+</html>
+
+

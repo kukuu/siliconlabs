@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Using indexof and slice functions to collect domain part of email</title>
+	<script language="javascript" type="text/javascript">
+		var my_email="useridhere@goldhawk-college.com";//string
+		var ind=my_email.indexOf("@");//where you want to start indexing
+		var my_slice=my_email.slice((ind+1),my_email.length);
+		document.write(my_slice);
+	
+	</script>
+</head>
+
+<body>
+
+<p><b>How to collect the domain part from the email address</b><br />
+We will use the string.length to find out the total length of the string and then collect the part of the string starting from the location of (@ +1) till the end of the string. Above is the code. 
+
+</p> 
+</body>
+</html>

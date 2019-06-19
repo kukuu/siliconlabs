@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>code checking name entry</title>	
+</head>
+<body>
+	<script language="javascript" type="text/javascript">
+
+		var firstName = '';
+		var lastName = '';		
+firstName = prompt('Enter your first name',firstName);
+		while (firstName ==  ‘’  || firstName == 'undefined') {
+			firstName = prompt('Try again entering your first name');
+		}
+		if (firstName != ' ' &&  firstName != 'undefined') {
+		lastName = prompt('Enter your last name',lastName);//this is a more rigid test
+			while (lastName ==  ‘’ || lastName == 'undefined') {
+				lastName = prompt('Try again entering your last name');
+			}
+		}
+		//finally out put data to browser
+		document.write('Hello ' + firstName + ' ' + lastName);
+	</script>		
+</body>
+</html>

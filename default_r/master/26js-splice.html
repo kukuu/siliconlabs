@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>splice</title>
+	<script>
+		function myFunction() {
+			var fruits = ["Banana", "Orange", "Apple", "Mango"];
+			fruits.splice(2,0,"Lemon","Kiwi");
+			var x=document.getElementById("demo");
+			x.innerHTML=fruits;
+		}
+	</script>
+</head>
+
+<body>
+
+<p id="demo">Click the button to add elements to the array. Note if numerical parameters is increasing(e.g 1,2) then items are replaced, else when decreasing (e.g 2,0) they are added to increase the array items</p>
+
+<button onclick="myFunction()">Try it</button>
+<p class="home"><a href="http://www.goldhawk-college.com/istudio/responsive-design/responsive-design-1.html">Home</a></p>
+
+</body>
+</html>
+
+
