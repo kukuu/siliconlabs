@@ -1,6 +1,6 @@
 # Elevating ideas with innovation
 
-## Technologies, Platforms, Architectures and Skills
+## Technologies, Platforms &  Architectures 
 . Design Thinking
 
 . Hybrid CMS - Headless (Crafter Studio / API)
