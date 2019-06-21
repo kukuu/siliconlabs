@@ -1,11 +1,20 @@
 # Elevating ideas with innovation
 
 ## Technologies, Platforms &  Architectures 
+
+. Object Oriented Programming / JavaScript & Object Oriented JavaScript
+
 . Design Thinking
+
+. NodeJS
+.
+. REST/RESTful APIs
 
 . Hybrid CMS - Headless (Crafter Studio / API)
 
-. Cloud Native
+. Containers & Orchestration (Docker, Kubernetes)
+
+. Cloud & Cloud Native
 
 . IAM 
 
@@ -14,12 +23,6 @@
 . REDUX
 
 . FLUX
-
-. Object Oriented Programming / JavaScript / Object Oriented JavaScript
-
-. REST/RESTful APIs
-
-. NodeJS
 
 . Express
 
@@ -55,6 +58,8 @@
 
 . Unit Testing
 
+. Cucumber
+
 . Karma
 
 . JASMINE
@@ -64,6 +69,8 @@
 . BDD
 
 . XP
+
+. Jasmine
 
 . Enzyme
 
@@ -238,3 +245,7 @@
 . Symphony
 
 . Ext.JS
+
+. Sauce Lab
+
+. Browserstack
