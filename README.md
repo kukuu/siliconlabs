@@ -1,7 +1,13 @@
 # Elevating ideas with innovation
 
 ## Technologies, Platforms, Architectures and Skills
-. Crafter Studio
+. Design Thinking
+
+. Hybrid CMS - Headless (Crafter Studio / API)
+
+. Cloud Native
+
+. IAM 
 
 . REACT 
 
@@ -57,17 +63,23 @@
 
 . BDD
 
+. XP
+
 . Enzyme
 
 . JEST
 
-. Continuous Development/Deployment
+. Continuus Integration (CI)
 
-. Continuus Integration
+. Continuous Development/Deployment
 
 . Micro Services
 
 . Service Oriented Architecture (SOA)
+
+. Severless
+
+. TIERS & Layers
 
 . Path
 
@@ -99,7 +111,7 @@
 
 . LESS
 
-. ActiveMQ(Apache - Messaging) 
+. ActiveMQ (Apache - Messaging) 
 
 . SPRING
 
@@ -117,7 +129,7 @@
 
 . SSO (Single Sign On)
 
-.Isomorphic JavaScript(Server side Rendering)
+. Isomorphic JavaScript(Server side Rendering)
 
 . PWA
 
@@ -224,7 +236,5 @@
 . AURORA 
 
 . Symphony
-
-. Swagger
 
 . Ext.JS
