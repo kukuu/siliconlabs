@@ -1,7 +1,7 @@
 bookworm-api > node
 
 var bcrypt = reqire('bcrypt');
-bcrypt.hashsync('8976009',12)
+bcrypt.hashsync('8976009!*Z|',12)
 //$2a$10$A/LqbjR9oSmD7w1gVCuUaej1i7pMj.dXZoSzhylPpenPUeyg7yKVG
 //alexander@alex.com
 //23456090
