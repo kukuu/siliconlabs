@@ -2,12 +2,20 @@
 
 ## Technologies, Platforms &  Architectures 
 
-. Object Oriented Programming / JavaScript & Object Oriented JavaScript
+. Object Oriented Programming 
+
+. JavaScript & Object Oriented JavaScript
+
+.  NodeJS 
+
+. AWS
 
 . Design Thinking
 
-. NodeJS
-.
+. Commerce Tools
+
+. HASURA
+
 . REST/RESTful APIs
 
 . Hybrid CMS - Headless (Crafter Studio / API)
@@ -153,6 +161,8 @@
 . APIs/JSON/XML
 
 . AWS
+
+. Containerisation (Docker, Kubernetes)
 
 . MySQL
 
